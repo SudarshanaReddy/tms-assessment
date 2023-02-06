@@ -62,8 +62,6 @@ public class HomeService {
 	//Depending on port and server setup, this is an example of the access URL: "http://localhost:8080/TMS_Assessment/command/home" which can be found under the SuperGlobal class
 	//You can include as many sub methods as you would like
 	//Please make use of the already included DAO functions provided
-	
-	//TODO: Unimplemented REST service
 	@Path("/fleetActiveRanges/{fleetID}")
 	@GET
 	@Produces("application/json")
