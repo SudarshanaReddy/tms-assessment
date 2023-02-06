@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 04 Apr 2018 4:41:20 PM by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="za.co.tms.obj.FleetTransferLog" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="FleetTransferLog">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="idOriginFleet" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="idOriginFleet"/>
+        </property>
+        <property generated="never" lazy="false" name="idFleet" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="idFleet"/>
+        </property>
+        <property generated="never" lazy="false" name="idCompany" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="idCompany"/>
+        </property>
+        <property generated="never" lazy="false" name="fleetAlias" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="fleetAlias"/>
+        </property>
+        <property generated="never" lazy="false" name="transferTime" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="transferTime"/>
+        </property>
+        <property generated="never" lazy="false" name="createdTime" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="createdTime"/>
+        </property>
+    </class>
+</hibernate-mapping>

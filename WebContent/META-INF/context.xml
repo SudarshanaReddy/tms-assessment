@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>		
+
+<Resource	
+		name="jdbc/TMSASSESMENT" 
+		auth="Container"
+		type="javax.sql.DataSource" 
+		username="root" 
+		password="secret"
+		driverClassName="com.mysql.jdbc.Driver" 
+		factory="org.apache.commons.dbcp.BasicDataSourceFactory"	
+		url="jdbc:mysql://localhost:3306/tmsassessment" 
+		maxActive="30"  
+		maxIdle="10" 
+		removeAbandoned="true" 
+		removeAbandonedTimeout="600"
+		testWhileIdle="true"
+		testOnBorrow="true"
+		timeBetweenEvictionRunsMillis="6000"
+		validationQuery="select 1" />
+</Context>
